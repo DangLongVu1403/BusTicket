@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VÉ XE KHÁCH"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewTicketId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã vé: 12345"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewStartLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm đi: "
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewEndLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm đến: "
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewDepartureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian đi: "
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewTypeBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại xe: "
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewNumberSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số ghế:"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewBookingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày đặt: "
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền:"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="(Đã bao gồm thuế GTGT và BHHK)"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
+
+</LinearLayout>

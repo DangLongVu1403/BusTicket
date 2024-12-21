@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:text="Hà Nội - Hà Tĩnh"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewTypeBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="38 giường"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/gray"
+                app:layout_constraintStart_toStartOf="@+id/textViewRoute"
+                app:layout_constraintTop_toBottomOf="@+id/textViewRoute" />
+
+            <TextView
+                android:id="@+id/textViewAvailableSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="38"
+                android:textColor="#03A9F4"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewRoute"
+                android:layout_marginRight="20dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chỗ trống"
+                android:textColor="#03A9F4"
+                app:layout_constraintEnd_toEndOf="@+id/textViewAvailableSeat"
+                app:layout_constraintTop_toTopOf="@+id/textViewTypeBus" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTypeBus" />
+
+            <TextView
+                android:id="@+id/textViewPriceTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250,000 VNĐ"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <TextView
+                android:id="@+id/textViewStartPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hà Nội"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textViewTypeBus"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <TextView
+                android:id="@+id/textViewTimeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="13:30"
+                app:layout_constraintStart_toStartOf="@+id/textViewTypeBus"
+                app:layout_constraintTop_toBottomOf="@+id/textViewStartPoint" />
+
+            <TextView
+                android:id="@+id/textViewEndPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hà Tĩnh"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textViewTypeBus"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTimeStart" />
+
+            <TextView
+                android:id="@+id/textViewTimeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="19:30"
+                app:layout_constraintStart_toStartOf="@+id/textViewTypeBus"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEndPoint" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

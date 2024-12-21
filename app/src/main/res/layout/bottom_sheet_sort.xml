@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgExit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:padding="5dp"
+        android:src="@drawable/ic_exit" />
+
+    <TextView
+        android:id="@+id/textViewSortByPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sắp xếp theo giá"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3" />
+
+    <TextView
+        android:id="@+id/textViewSortByTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sắp xếp theo giờ xuất phát"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bus Tickets</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_ticket">My ticket</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="setting">Setting</string>
+    <string name="login">Login</string>
+    <string name="choose_destination">Choose destination</string>
+    <string name="choose_drop_off_point">Choose drop-off point</string>
+    <string name="hello">Hello</string>
+    <string name="how_long_since_you_return_home">How long has it been since you last returned home?</string>
+    <string name="travel_to_many_places_see_more">Travel to many places, see more!</string>
+    <string name="booked">Booked</string>
+    <string name="other">Other</string>
+    <string name="ticket_code">Ticket code</string>
+    <string name="booking_date">Booking date</string>
+    <string name="departure_date">Departure date</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="completed">Completed</string>
+    <string name="support_center">Support center</string>
+</resources>

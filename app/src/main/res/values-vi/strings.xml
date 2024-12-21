@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bus Tickets</string>
+    <string name="my_ticket">Vé của tôi</string>
+    <string name="home">Trang chủ</string>
+    <string name="notification">Thông báo</string>
+    <string name="setting">Cài đặt</string>
+    <string name="login">Đăng nhập</string>
+    <string name="choose_destination">Chọn điểm đến</string>
+    <string name="choose_drop_off_point">Chọn điểm trả</string>
+    <string name="hello">Chào bạn</string>
+    <string name="how_long_since_you_return_home">Đã bao lâu bạn chưa về quê?</string>
+    <string name="travel_to_many_places_see_more">Đi nhiều nơi, thấy nhiều hơn!</string>
+    <string name="booked">Đã đặt</string>
+    <string name="other">Khác</string>
+    <string name="ticket_code">Mã vé</string>
+    <string name="booking_date">Ngày đặt</string>
+    <string name="departure_date">Ngày đi</string>
+    <string name="cancelled">Đã hủy</string>
+    <string name="completed">Đã hoàn thành</string>
+    <string name="support_center">Trung tâm hỗ trợ</string>
+</resources>

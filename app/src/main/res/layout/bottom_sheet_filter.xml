@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgExit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:padding="5dp"
+        android:src="@drawable/ic_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khung giờ"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgExit" />
+
+    <TextView
+        android:id="@+id/textViewFilterMorning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="0h - 12h"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFilterAfternoon"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textViewFilterAfternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="12h - 18h"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFilterEvening"
+        app:layout_constraintStart_toEndOf="@+id/textViewFilterMorning"
+        app:layout_constraintTop_toTopOf="@+id/textViewFilterMorning" />
+
+    <TextView
+        android:id="@+id/textViewFilterEvening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="18h - 24h"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewFilterAfternoon"
+        app:layout_constraintTop_toTopOf="@+id/textViewFilterMorning" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loại xe"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFilterMorning" />
+
+    <TextView
+        android:id="@+id/textView20Seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="20 phòng"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFilterAfternoon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView34Seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="34 phòng"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFilterEvening"
+        app:layout_constraintStart_toEndOf="@+id/textViewFilterMorning"
+        app:layout_constraintTop_toTopOf="@+id/textView20Seat" />
+
+    <TextView
+        android:id="@+id/textView42Seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_selector"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="42 gường"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewFilterAfternoon"
+        app:layout_constraintTop_toTopOf="@+id/textView20Seat" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Áp dụng"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34Seat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
