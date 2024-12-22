@@ -52,6 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_fromto"
@@ -112,6 +113,28 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView18"
         app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số ghế: "
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSelectedSeat"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSelectedSeat"
+        app:layout_constraintTop_toTopOf="@+id/textViewSelectedSeat" />
+
+    <TextView
+        android:id="@+id/textViewSelectedSeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="16dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewType" />
 
     <TextView
         android:id="@+id/textView23"

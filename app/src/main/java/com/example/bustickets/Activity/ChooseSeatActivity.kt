@@ -1,5 +1,6 @@
 package com.example.bustickets.Activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -57,6 +58,17 @@ class ChooseSeatActivity : AppCompatActivity() {
 
         binding.imgBack.setOnClickListener {
             finish()
+        }
+
+        binding.imgAgree.setOnClickListener {
+            if (selectedSeat == null) {
+                Toast.makeText(this,"Vui lòng chọn chỗ ngồi",Toast.LENGTH_SHORT).show()
+            }else {
+                val intent = Intent(this, BuyTicketActivity::class.java)
+                intent.putExtra("id", id)
+                intent.putExtra("selectedSeat",selectedSeat)
+                startActivity(intent)
+            }
         }
 
         if(type == 20) {

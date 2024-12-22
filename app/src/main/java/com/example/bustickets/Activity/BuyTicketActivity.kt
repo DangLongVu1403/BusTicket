@@ -30,6 +30,8 @@ class BuyTicketActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val id = intent.getStringExtra("id")
+        val selectedSeat = intent.getStringExtra("selectedSeat")
+        binding.textViewSelectedSeat.text = selectedSeat
         if (id != null) {
             RetrofitInstance.apiService.getTripById(id)
                 .enqueue(object : Callback<TripByIdResponse> {
